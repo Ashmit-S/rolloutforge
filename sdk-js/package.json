@@ -1,0 +1,36 @@
+{
+  "name": "@ashmit-s/rolloutforge-sdk",
+  "version": "0.1.0",
+  "description": "Official Javascript SDK for the RolloutForge feature flag service.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashmit-S/rolloutforge.git",
+    "directory": "sdk-js"
+  },
+  "homepage": "https://github.com/Ashmit-S/rolloutforge/tree/main/sdk-js#readme",
+  "bugs": {
+    "url": "https://github.com/Ashmit-S/rolloutforge/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "feature-flags",
+    "sdk"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
